@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import roomfinder from "../assets/firstP.png";
 import TodoPro from "../assets/TodoPro.png";
-import EcommercePro from "../assets/EcommercePro.png";
+import EcommercePro from "../assets/posterz.png";
 
 const Projects = () => {
   const projectData = [
