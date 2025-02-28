@@ -35,7 +35,7 @@ const Projects = () => {
         "EXPRESS",
         "MongoDB",
       ],
-      link: "https://ecommerce.example.com",
+      link: "https://poster-z.vercel.app",
     },
     {
       image: TodoPro,
