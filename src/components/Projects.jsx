@@ -37,14 +37,7 @@ const Projects = () => {
       ],
       link: "https://poster-z.vercel.app",
     },
-    {
-      image: TodoPro,
-      title: "Expense Tracter",
-      description:
-        "A personal portfolio showcasing my projects and skills, built using modern web technologies.",
-      technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT.JS"],
-      link: "https://assesment-task-git-main-dipendra-s-projects-d6887546.vercel.app/home",
-    },
+  
   ];
 
   const ScrollReveal = ({ children }) => {
