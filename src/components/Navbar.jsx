@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
       <a
         href="#home"
-        className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent opacity-80 text-3xl font-semibold transition-all duration-300 hover:opacity-100"
+        className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent opacity-80 text-3xl font-semibold transition-all duration-300 hover:opacity-100"
       >
         Dipendra Singh Patel
       </a>
@@ -48,13 +48,13 @@ const Navbar = () => {
       </ul>
 
       <ul className="hidden md:flex gap-5">
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-emerald-400 hover:opacity-100">
           <a href="https://github.com/DipendraPatel12" target="_blank">
             <BsGithub />
           </a>
         </li>
 
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-cyan-400 hover:opacity-100">
           <a
             href="https://www.linkedin.com/in/dipendra-singh-patel-623187210"
             target="_blank"
@@ -107,13 +107,13 @@ const Navbar = () => {
           </ul>
 
           <ul className="flex flex-wrap gap-5">
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
+            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-emerald-400 hover:opacity-100">
               <a href="https://github.com/DipendraPatel12" target="_blank">
                 <BsGithub />
               </a>
             </li>
 
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-cyan-400 hover:opacity-100">
               <a
                 href="https://www.linkedin.com/in/dipendra-singh-patel-623187210/"
                 target="_blank"

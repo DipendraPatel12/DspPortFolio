@@ -16,7 +16,7 @@ const Hero = () => {
           <img
             src={dsp}
             alt=""
-            className="w-[300px] cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 md:w-[250px] mt-5"
+            className="w-[300px] cursor-pointer rounded-full shadow-xl shadow-emerald-900/50 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/50 md:w-[250px] mt-5"
           />
         </motion.div>
 
@@ -26,10 +26,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex max-w-[600px] flex-col items-center justify-center gap-3 text-center"
         >
-          <h1 className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-5xl font-light md:text-7xl">
+          <h1 className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent text-5xl font-light md:text-7xl">
             Dipendra Singh Patel
           </h1>
-          <h3 className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent text-2xl md:text-3xl">
+          <h3 className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent text-2xl md:text-3xl">
             FullStack Developer
           </h3>
           <p className="md:text-base text-pretty text-sm text-gray-400">

@@ -14,7 +14,9 @@ import {
   SiPostgresql,
   SiDocker,
   SiRedis,
+  SiSequelize,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const Tech = () => {
@@ -102,6 +104,16 @@ const Tech = () => {
         {/* Redis */}
         <motion.div variants={variants} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }}>
           <SiRedis className="cursor-pointer text-[80px] text-red-500 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
+        </motion.div>
+
+        {/* Sequelize */}
+        <motion.div variants={variants} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }}>
+          <SiSequelize className="cursor-pointer text-[80px] text-blue-500 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
+        </motion.div>
+
+        {/* React Native */}
+        <motion.div variants={variants} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }}>
+          <TbBrandReactNative className="cursor-pointer text-[80px] text-sky-400 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
         </motion.div>
       </div>
     </div>
