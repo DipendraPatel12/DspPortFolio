@@ -4,21 +4,21 @@ const Contact = () => {
       id="contact"
       className="flex min-h-[70vh] min-w-full items-center justify-center"
     >
-      <div className="flex flex-col items-center justify-center gap-3 space-y-6 p-14">
+      <div className="flex flex-col items-center justify-center gap-3 space-y-6 p-14 rounded-3xl bg-slate-900/30 backdrop-blur-md border border-slate-700/50 shadow-2xl max-w-[800px]">
         <h1 className="text-center text-5xl md:text-7xl">
           <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
             Get in Touch
           </span>
         </h1>
-        <p className="text-center text-lg font-semibold text-gray-500">
+        <p className="text-center text-lg font-medium text-gray-300">
           Want to chat? Send me an E-mail through this button and I'll respond
           whenever I can.
         </p>
         <a
           href="mailto:dipendrapatel926@gmail.com"
-          className="text-nowrap rounded-lg border border-emerald-600 bg-black px-5 py-3 text-lg font-bold 
-          text-white shadow-lg shadow-emerald-900/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl 
-          hover:shadow-cyan-500/50"
+          className="text-nowrap rounded-lg border border-emerald-500 bg-emerald-950/50 px-6 py-3 text-lg font-bold 
+          text-white shadow-lg shadow-emerald-900/50 transition-all duration-300 hover:-translate-y-2 hover:bg-emerald-600 hover:shadow-xl 
+          hover:shadow-emerald-500/50"
         >
           Contact Me
         </a>

@@ -61,24 +61,24 @@ const Projects = () => {
           rel="noopener noreferrer"
           className="no-underline"
         >
-          <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24 cursor-pointer">
+          <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12 cursor-pointer p-6 rounded-3xl bg-slate-900/30 backdrop-blur-md border border-slate-700/50 shadow-xl transition-all duration-300 hover:bg-slate-800/40 hover:border-emerald-500/50 hover:shadow-emerald-900/20">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px]"
+              className="w-full rounded-2xl transition-all duration-300 hover:scale-105 md:w-[350px] object-cover h-[200px]"
             />
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 flex-1">
               <div className="flex flex-col gap-3 text-center md:text-left">
-                <div className="text-xl font-semibold">
+                <div className="text-2xl font-semibold text-white">
                   {project.title || "Untitled Project"}
                 </div>
-                <p className="text-gray-400">{project.description}</p>
+                <p className="text-gray-300 leading-relaxed">{project.description}</p>
               </div>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="rounded-lg bg-emerald-950/50 border border-emerald-800/50 text-emerald-200 px-4 py-2 text-sm"
+                    className="rounded-lg bg-emerald-950/50 border border-emerald-800/50 text-emerald-200 px-4 py-2 text-sm font-medium tracking-wide"
                   >
                     {tech}
                   </span>
