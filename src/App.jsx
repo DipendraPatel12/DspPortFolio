@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Tech from "./components/Tech";
 import Scene3D from "./components/Scene3D";
+import Services from "./components/Services";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <main className="flex flex-col items-center px-4 md:px-8 lg:px-16 relative z-10">
         <Navbar />
         <Hero />
+        <Services />
         <Tech />
         <Projects />
         <Contact />

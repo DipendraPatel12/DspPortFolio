@@ -7,50 +7,50 @@ const FloatingObjects = () => {
   
   // Rotate the entire group slowly based on mouse position or time
   useFrame((state) => {
-    group.current.rotation.y = state.clock.getElapsedTime() * 0.05;
-    group.current.rotation.x = Math.sin(state.clock.getElapsedTime() * 0.1) * 0.2;
+    group.current.rotation.y = state.clock.getElapsedTime() * 0.08;
+    group.current.rotation.x = Math.sin(state.clock.getElapsedTime() * 0.15) * 0.3;
     
-    // Add slight parallax effect based on mouse
-    const mouseX = (state.pointer.x * Math.PI) / 10;
-    const mouseY = (state.pointer.y * Math.PI) / 10;
+    // Add stronger parallax effect based on mouse
+    const mouseX = (state.pointer.x * Math.PI) / 8;
+    const mouseY = (state.pointer.y * Math.PI) / 8;
     group.current.position.x = mouseX;
     group.current.position.y = mouseY;
   });
 
   return (
     <group ref={group}>
-      <Float speed={2} rotationIntensity={1.5} floatIntensity={2}>
-        <mesh position={[3, 1, -2]}>
+      <Float speed={2.5} rotationIntensity={2} floatIntensity={3}>
+        <mesh position={[4, 1, -2]}>
           <icosahedronGeometry args={[1, 0]} />
-          <meshStandardMaterial color="#34d399" wireframe opacity={0.5} transparent />
+          <meshStandardMaterial color="#34d399" wireframe opacity={0.6} transparent />
         </mesh>
       </Float>
       
-      <Float speed={1.5} rotationIntensity={2} floatIntensity={1.5}>
-        <mesh position={[-3, -1, -3]}>
+      <Float speed={2} rotationIntensity={2.5} floatIntensity={2}>
+        <mesh position={[-4, -1, -3]}>
           <torusGeometry args={[0.8, 0.3, 16, 32]} />
-          <meshStandardMaterial color="#22d3ee" wireframe opacity={0.5} transparent />
+          <meshStandardMaterial color="#22d3ee" wireframe opacity={0.6} transparent />
         </mesh>
       </Float>
 
-      <Float speed={1.2} rotationIntensity={1} floatIntensity={2.5}>
-        <mesh position={[1, -3, -5]}>
+      <Float speed={1.5} rotationIntensity={1.5} floatIntensity={3}>
+        <mesh position={[2, -4, -5]}>
           <octahedronGeometry args={[1.5, 0]} />
-          <meshStandardMaterial color="#10b981" wireframe opacity={0.5} transparent />
+          <meshStandardMaterial color="#10b981" wireframe opacity={0.6} transparent />
         </mesh>
       </Float>
       
-      <Float speed={1.8} rotationIntensity={2} floatIntensity={1.5}>
-        <mesh position={[-4, 2, -4]}>
+      <Float speed={2.2} rotationIntensity={2.5} floatIntensity={2}>
+        <mesh position={[-5, 3, -4]}>
           <boxGeometry args={[1.2, 1.2, 1.2]} />
-          <meshStandardMaterial color="#06b6d4" wireframe opacity={0.5} transparent />
+          <meshStandardMaterial color="#06b6d4" wireframe opacity={0.6} transparent />
         </mesh>
       </Float>
       
-      <Float speed={1.5} rotationIntensity={1} floatIntensity={2}>
-        <mesh position={[0, 2, -6]}>
+      <Float speed={2} rotationIntensity={1.5} floatIntensity={2.5}>
+        <mesh position={[0, 3, -6]}>
           <torusKnotGeometry args={[1, 0.3, 100, 16]} />
-          <meshStandardMaterial color="#0ea5e9" wireframe opacity={0.3} transparent />
+          <meshStandardMaterial color="#0ea5e9" wireframe opacity={0.4} transparent />
         </mesh>
       </Float>
     </group>
