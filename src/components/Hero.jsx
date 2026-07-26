@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import dsp from "../assets/anime_avatar.png";
+import newdsp from "../assets/newdsp.jpg";
 
 const Hero = () => {
   const x = useMotionValue(0);
@@ -79,12 +79,13 @@ const Hero = () => {
                 transform: "translateZ(50px)",
                 transformStyle: "preserve-3d",
               }}
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-full rounded-full ring-4 ring-emerald-500/50 overflow-hidden"
             >
                <img
-                  src={dsp}
+                  src={newdsp}
                   alt="Dipendra Singh Patel"
-                  className="w-full h-full object-cover rounded-full pointer-events-none ring-4 ring-emerald-500/50"
+                  className="w-full h-full object-cover pointer-events-none"
+                  style={{ objectPosition: "50% 20%", transform: "scale(1.08) translate(-3.5%, 3%)" }}
                />
             </div>
             
